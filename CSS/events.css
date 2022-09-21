@@ -1,0 +1,520 @@
+*,
+body,
+html {
+  font-size: 1rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#mux-logo {
+  position: fixed;
+  width: 50px;
+  height: auto;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+}
+
+/* Burger menu */
+#menu-toggle {
+  opacity: 0;
+  display: none;
+}
+
+/* Burger menu icon til kryds animation */
+#menu-toggle:checked+.menu-btn>span {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked+.menu-btn>span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+/* Burder menu icon tilbage til 3 streger*/
+#menu-toggle:checked+.menu-btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu-toggle:checked~.menu-box {
+  right: 0;
+  opacity: 1;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 101;
+  color: #fff;
+}
+
+/* Burger menu streger */
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition-duration: .25s;
+}
+
+.menu-btn>span.span.black::before {
+  background-color: #000;
+}
+
+.menu-btn>span.span.black::after {
+  background-color: #000;
+}
+
+.menu-btn>span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu-btn>span::after {
+  content: '';
+  top: 8px;
+}
+
+/* Bruger menu baggrund */
+.menu-box {
+  opacity: 0;
+  display: block;
+  position: fixed;
+  top: 0%;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 40px 0;
+  list-style: none;
+  background: #f8faea;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  z-index: 100;
+}
+
+/* Burger menu items */
+.menu-item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  color: #1d00ff;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu-item:hover {
+  background-color: #1a2537;
+  color: #f8faea;
+}
+
+.grey-box {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: none;
+  overflow: visible;
+  background-color: #262626;
+  opacity: 0.35;
+  z-index: 100;
+}
+
+.some-container {
+  margin: 5% 15% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.some-img {
+  width: 45px;
+  height: 45px;
+  filter: invert(100%);
+}
+
+.buergermenu-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Event cards */
+
+.event-sektion {
+  position: relative;
+  padding: 20px 0;
+  overflow-x: hidden;
+  background-color: #1a2537;
+}
+
+.event-sektion-seneste {
+  position: relative;
+  padding: 20px 0;
+  overflow-x: hidden;
+  background-color: #1a2537;
+}
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.event-titel {
+  width: 100vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  right: 0px;
+  font-style: italic;
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+  color: #f8faea;
+}
+
+.event-titel-event {
+  width: 100vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 0px;
+  font-style: italic;
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+  color: #f8faea;
+}
+
+.event-card {
+  padding: 1.5em;
+  background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 1));
+}
+
+.card-container {
+  min-width: 400px;
+  max-width: 400px;
+  color: #fff;
+  background-image: url(../Media/Images/SpotXMux.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12.5rem 0 0;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.card-container:nth-child(2) {
+  background-image: url(../Media/Images/ScandicXMux.webp);
+}
+
+.card-container:nth-child(3) {
+  background-image: url(../Media/Images/RidehusetXMux.webp);
+}
+
+.card-btn {
+  position: relative;
+  left: 25%;
+  color: #f8faea;
+  background: #1a2537;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  padding: 12px 35px;
+  margin: 20px 0 10px 0;
+  height: 50px;
+  width: 200px;
+  transform: skew(-21deg);
+  border: 3px solid #f8faea;
+}
+
+.card-btn:hover {
+  color: #1a2537;
+  background: #f8faea;
+  border: 3px solid #1d00ff;
+  outline: 1px solid #1d00ff;
+}
+
+.card-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.event-card-body {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Footer styiling */
+
+.footer {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f8faea;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer > div > h1{
+  font-size: 2rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.footer > div > h2 {
+font-family: freight-display-pro, serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+display: none;
+}
+
+.footer-img {
+  width: 100%;
+  max-width: 150px;
+}
+
+footer img {
+  display: none;
+  justify-content: flex-end;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.footer-nav a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #b613a0;
+}
+
+.designet-af-class:hover {
+  color: #b613a0;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #eef0f6;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
+    0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),
+    0 3.4px 28.2px rgba(0, 0, 0, 0.03), 0 6.3px 54.4px rgba(0, 0, 0, 0.047),
+    0 15px 137px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  z-index: 300;
+  animation: gempopup 1000ms ease;
+}
+
+@keyframes gempopup {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styling af elementer inde i kortet */
+.info>div>a {
+  color: #0060f6;
+  text-decoration: none;
+}
+
+.gem-popup {
+  display: none;
+}
+
+.top {
+  background-color: #eee;
+  border-radius: 20px;
+  margin: 16px 0;
+  width: 260px;
+}
+
+.text {
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+  width: 100%;
+}
+
+.title {
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  position: relative;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.info {
+  color: #262626;
+  display: flex;
+  justify-content: space-around;
+  font-size: 11px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-primary {
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 10px;
+  width: 50%;
+}
+
+.button-primary {
+  background-color: #0060f6;
+  color: #fff;
+}
+
+.button-primary:hover {
+  background-color: #024bbf;
+}
+
+.designet-af-class:hover {
+  cursor: pointer;
+}
+
+/* Media queries begynder */
+@media only screen and (min-width: 400px) {
+  .event-card {
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 1));
+  }
+
+  .info {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .menu-box {
+    width: 60%;
+  }
+
+  .card-container:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  #menu-toggle:checked~.grey-box {
+    display: block;
+  }
+
+  .card {
+    width: 65%;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .card-container:nth-child(3) {
+    margin-left: 50px;
+  }
+
+  .card-container:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  .event-titel {
+    font-size: 4rem;
+  }
+
+  .event-titel-event {
+    font-size: 4rem;
+  }
+
+  .card {
+    width: 55%;
+  }
+
+  .info {
+    font-size: 1.1rem;
+  }
+}
+
+/*Hvis device har hover aktiveret, skal disse styles bruges*/
+@media (hover) {
+  .card-container {
+    transition: transform 500ms ease;
+  }
+
+  .event-card {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .card-container:hover {
+    transform: scale(1.05);
+  }
+
+  .card-container:hover .event-card {
+    transform: translateY(0);
+  }
+}

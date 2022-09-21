@@ -1,0 +1,52 @@
+#body {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.konstruktion-img {
+    width: 70%;
+}
+
+.konstruktion-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    color: #fff;
+    background: #0a0a0a;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    width: 200px;
+    display: inline-block;
+    transform: skew(-21deg);
+    border: 3px solid #0a0a0a;
+}
+
+@media only screen and (min-width: 800px) {
+    .button {
+        top: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .button {
+        top: 90%;
+    }
+}
