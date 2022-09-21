@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vi genopfinder din koncertoplevelse og giver dig en oplevelse for livet!">
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link rel="stylesheet" href="CSS/events.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="Media/Images/Mux-tabicon.webp">
+  <link rel="apple-touch-icon" href="Media/Images/Mux-tabicon.webp">
+  
+  <title>MUX | Events</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img id="mux-logo" src="Media/Images/Mux-logo-alpha.webp" alt="Mux logo uden baggrund" />
+    </a>
+    <nav>
+      <!-- Begyndelse på burger menu -->
+      <div class="hamburger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span class="span"></span>
+        </label>
+        <div class="grey-box"></div>
+
+        <div class="menu-box">
+          <ul>
+            <li><a class="menu-item" href="index.html">HJEM</a></li>
+            <li><a class="menu-item" href="ommux.html">OM MUX</a></li>
+            <li><a class="menu-item" href="galleri.html">GALLERI</a></li>
+            <li><a class="menu-item" href="events.html">EVENTS</a></li>
+            <li><a class="menu-item" href="kontaktos.html">KONTAKT OS</a></li>
+          </ul>
+
+          <div class="some-container">
+            <a href="https://www.facebook.com/MUX8000/"><img loading="lazy" class="some-img" src="Media/Images/f_logo_RGB-Black_58.webp" alt="Facebook logo"/></a>
+            <a href="https://www.instagram.com/mux8000/"><img loading="lazy" class="some-img" src="Media/Images/glyph-logo_May2016.webp" alt="Instagram logo"/></a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Kommende Events sektion -->
+  <main class="event-sektion">
+  <h1 class="event-titel-event">Kommende</h1>
+    <h2 class="event-titel">Events</h2>
+    <div class="event-container">
+      <!-- Card one -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">SPOT</h2>
+          <p class="event-card-body">06/05/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='kunstruktion.html'">Køb billet</button>
+        </div>
+      </div>
+      <!-- Card two -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Scandic</h2>
+          <p class="event-card-body">26/03/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='kunstruktion.html'">Køb billet</button>
+        </div>
+      </div>
+      <!-- Card Three -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Ridehuset</h2>
+          <p class="event-card-body">14/08/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='kunstruktion.html'">Køb billet</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- seneste events sektion -->
+  <section class="event-sektion-seneste">
+    <h2 class="event-titel">Seneste</h2>
+    <h2 class="event-titel-event">Events</h2>
+
+    <!-- Card one -->
+    <div loading="lazy" class="event-container">
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">SPOT</h2>
+          <p class="event-card-body">06/05/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='konstruktion.html'">Se Event</button>
+        </div>
+      </div>
+      
+      <!-- Card two -->
+      <div loading="lazy" class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Scandic</h2>
+          <p class="event-card-body">26/03/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='konstruktion.html'">Se Event</button>
+        </div>
+      </div>
+      
+      <!-- Card Three -->
+      <div loading="lazy" class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Ridehuset</h2>
+          <p class="event-card-body">14/08/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='konstruktion.html'">Se Event</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Begyndelse på footer-->
+  <footer class="footer">
+    <div>
+      <h1>Kulturforeningen MUX</h1>
+      <h2 style="margin-bottom: 20px;">Tværæstetiske koncertoplevelser i Aarhus</h2>
+      <div style="display: flex;">
+        <p  style="margin-right: 50px;">mux8000@gmail.com</p>
+        <p>Jægergårdsgade 154, Aarhus, 800</p>
+      </div>
+
+      <div style="display: flex;">
+        <p  style="margin-right: 50px; color: rgb(163, 163, 163);">© Copyright 2019, MUX</p>
+        <a class="designet-af-class" style=" color: rgb(163, 163, 163);">Designet & udviklet af Next Level Media</a>
+      </div>
+    </div>
+
+      <img style="width: 10%; filter: invert(100%);" src="Media/Images/Mux-logo-alpha.webp" alt="">
+  </footer>
+  <script src="JS/events.js"></script>
+</body>
+</html>
